@@ -45,9 +45,9 @@ public class SpringJpaManytomanyApplication implements CommandLineRunner{
 		Employee employee1=new Employee("Banu","CSE","Hyderabad",courses);
 		employeeService.addEmployee(employee1);
 		
-		Set<Course> courseList=new HashSet<>(Arrays.asList(course1,course2));
-		Employee employee2=new Employee("Ramya","IT","Hyderabad",courseList);
-		employeeService.addEmployee(employee2);
+//		Set<Course> courseList=new HashSet<>(Arrays.asList(course1,course2));
+//		Employee employee2=new Employee("Ramya","IT","Hyderabad",courseList);
+//		employeeService.addEmployee(employee2);
 		
 		//passed
 		System.out.println("Adding....");

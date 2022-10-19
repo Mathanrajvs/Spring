@@ -25,7 +25,7 @@ private Integer employeeId;
 private String department;
 @Column(length = 20)
 private String city;
-@ManyToMany(cascade = {CascadeType.MERGE},fetch=FetchType.EAGER)
+@ManyToMany(cascade = {CascadeType.ALL},fetch=FetchType.EAGER)
 @JoinTable(
 		name="employee_course",
 		joinColumns= @JoinColumn(name="employee_id"),
